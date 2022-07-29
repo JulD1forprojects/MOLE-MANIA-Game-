@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mole Mania</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--! Creating screen elements  -->
+    <div class="container">
+      <div class="row">
+        <div class="content">
+          <div class="heading">
+            <h1>MOLE MANIA</h1>
+            <img src="mole.png" class="logo" />
+          </div>
+          <!--!-- Creating a Player's Name Input Screen -->
+          <div id="playerNameScreen">
+            <label>Player Name</label><br />
+            <input
+              type="text"
+              class="playername"
+              id="playerName"
+              placeholder="Player Name"
+            />
+            <br />
+            <input
+              type="button"
+              class="playGameBtn"
+              id="playGame"
+              value="PLAY!"
+            />
+            <br />
+
+            <!--!-- Creating a span for ID error (pops when player does not input name) -->
+            <span id="error"></span>
+          </div>
+
+          <!--!-- Creating div with game levels  -->
+          <div class="gameLevels" id="gameLevels">
+            <button class="defaultBtn" id="easyLevel">EASY</button>
+            <br />
+            <button class="defaultBtn" id="hardLevel">HARD</button>
+            <br />
+            <button class="instructionBtn" id="instructionsBtn">?</button>
+          </div>
+
+          <!-- !-- Creating a game Screen div-->
+          <div id="gameScreen">
+            <div id="heading">
+              <span id="pname"></span><br />
+              <span id="score">Score : <span id="currentScore">0</span></span
+              ><br />
+              <span id="timer">Time : <span id="remainTime">30</span></span
+              ><br />
+            </div>
+
+            <!-- !-- Creating a pop up timer for boxes div-->
+            <div id="popupTimer">3</div>
+
+            <!-- !-- Creating  Mouse Boxes div-->
+            <div id="moleBoxes">
+              <span class="moleBox" id="m1"></span
+              ><span class="moleBox" id="m2"></span
+              ><span class="moleBox" id="m3"></span
+              ><span class="moleBox" id="m4"></span
+              ><span class="moleBox" id="m5"></span
+              ><span class="moleBox" id="m6"></span
+              ><span class="moleBox" id="m7"></span
+              ><span class="moleBox" id="m8"></span
+              ><span class="moleBox" id="m9"></span>
+            </div>
+          </div>
+
+          <!-- !-- Creating GameOver Score Screen div-->
+          <div class="gameOver" id="gameOver">
+            <h2 class="gameover">GAME OVER</h2>
+            <h2 id="pname1"></h2>
+            <h2 id="finalscore">Score : <span id="currentScore1"></span></h2>
+            <h2>Accuracy : <span id="accuracy"></span></h2>
+            <button class="defaultBtn" id="playAgain">PLAY AGAIN</button>
+          </div>
+
+          <!--! CREATING KEYBOARD PLAYER INSTRUCTIONS FOR THE GAME -->
+          <div class="instructions" id="instructions">
+            <h2 class="howtoplay">INSTRUCTIONS</h2>
+            <h4>Key Mappings</h4>
+            <span class="instructionBox"></span>
+            <span class="instructionBox"></span>
+            <span class="instructionBox"></span>
+            <br />
+            <span class="keyLetter">Q</span>
+            <span class="keyLetter">W</span>
+            <span class="keyLetter">E</span>
+            <br />
+            <br />
+            <span class="instructionBox"></span>
+            <span class="instructionBox"></span>
+            <span class="instructionBox"></span>
+            <br />
+            <span class="keyLetter">A</span>
+            <span class="keyLetter">S</span>
+            <span class="keyLetter">D</span>
+            <br />
+            <br />
+            <span class="instructionBox"></span>
+            <span class="instructionBox"></span>
+            <span class="instructionBox"></span>
+            <br />
+            <span class="keyLetter">Z</span>
+            <span class="keyLetter">X</span>
+            <span class="keyLetter">C</span> <br /><br />
+            <button type="button" id="hideHelp">X</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
