@@ -7,12 +7,12 @@ let randomBox; // To store the Random Box ID to display mouse image inside the b
 let randomInterval; // To store the random interval time
 let totalClicked = 0; // Count total clicked of the mouse/key
 let correctClicked = 0; // Count correct box clicked OR correct mouse key pressed
-let displayMoleImage; // Time interval to display mouse image
+let displayMoleImage; // Time interval to display Mole image
 let accuracy; // Calculate the accuracy of the player
 let allBoxes = ["m1", "m2", "m3", "m4", "m5", "m6", "m7", "m8", "m9"]; // Array of all 9 boxes
 let gameStart = false; // To identify if the game started
 
-//! Function No. 1 -> startGame()
+//! FUNCTION No. 1 -> startGame()
 function startGame() {
   $("#playerNameScreen").show(); // Display the player's name field
   // Click event on PLAY! button
@@ -98,7 +98,7 @@ function startGame() {
   });
 }
 
-//! Function No. 2 -> playGame()
+//! FUNCTION No. 2 -> playGame()
 function playGame() {
   // Loop through all 9 boxes
   for (let i = 0; i < allBoxes.length; i++) {
@@ -118,7 +118,7 @@ function playGame() {
   }
 }
 
-//! Function No. 3 -> displayMole()
+//! FUNCTION No. 3 -> displayMole()
 function displayMole() {
   // Generate one random box from the array of 9 boxes
   randomBox = allBoxes[Math.floor(Math.random() * allBoxes.length)];
@@ -144,7 +144,7 @@ function displayMole() {
   }
 }
 
-// Function No. 4 -> checkMole()
+//! FUNCTION No. 4 -> checkMole()
 function checkMole(b) {
   console.log(b); // Console the key pressed or clicked box id
   // Check if player pressed the keyboard key according to the randomly generated box id
@@ -166,7 +166,7 @@ function checkMole(b) {
     $("#currentScore").text(correctClicked); // Display score at top heading
     $("#" + randomBox).html(""); // Hide the mole image once correct KEY is pressed
   }
-  // Check if player pressed the keyboard key is NOT clicked according to the random generated box id
+  // Check if player pressed the keyboard key is //! NOT clicked according to the random generated box id
   else if (
     (b === "q" && randomBox !== "m1") ||
     (b === "w" && randomBox !== "m2") ||
