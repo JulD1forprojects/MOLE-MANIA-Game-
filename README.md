@@ -2,7 +2,7 @@
 
 ## **About this game**
 
-Mole Mania is a modified version of “Whack a mole” game designed to test player’s reaction and dexterity (with the keyboard). This game is designed for a solo player where the player is presented with two challenge levels - Easy & Hard. The challenge levels differ in terms of frequency how often Mole sprite is shown up in the game boxes.
+Mole Mania is a modified version of “Whack a mole” game designed to test player’s attention, reaction and dexterity (with the keyboard). This game is designed for a solo player where the player is presented with two challenge levels - Easy & Hard. The challenge levels differ in terms of frequency how often Mole sprite is shown up in the game boxes.
 
 ## **Instructions**
 
