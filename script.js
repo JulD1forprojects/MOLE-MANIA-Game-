@@ -110,6 +110,11 @@ function playGame() {
     displayMoleImage = setInterval(function () {
       displayMole(); // Call the displayMole() -> FUNCTION NO. 3
     }, 1700);
+  } else if (gameLevel == "Medium") {
+    // if game level is Medium, set interval of 1100 milliseconds to display the Mole image
+    displayMoleImage = setInterval(function () {
+      displayMole(); // Call the displayMole() -> FUNCTION NO. 3
+    }, 1200);
   } else if (gameLevel == "Hard") {
     // if game level is Hard,  set interval of 1200 milliseconds to display the Mole image
     displayMoleImage = setInterval(function () {
@@ -128,7 +133,15 @@ function displayMole() {
   $("#" + randomBox).html("<img class='moleimg' src='mole.png' />");
   if (gameLevel == "Easy") {
     // if game level Easy, generate any random interval between the range of 1000 milliseconds to 1400 milliseconds
-    randomInterval = Math.floor(Math.random() * (1400 - 1000 + 1)) + 1000;
+    randomInterval = Math.floor(Math.random() * (1700 - 1000 + 1)) + 1000;
+    console.log("Random Interval : " + randomInterval); // Console the random interval between the range of 1000 to 1400
+    // after the random interval is generated, hide the mole image
+    setTimeout(function () {
+      $("#" + randomBox).html(""); // Hide the mole image
+    }, randomInterval); // randomInterval -> generated any random interval
+  } else if (gameLevel == "Medium") {
+    // if game level Easy, generate any random interval between the range of 1000 milliseconds to 1400 milliseconds
+    randomInterval = Math.floor(Math.random() * (1200 - 900 + 1)) + 900;
     console.log("Random Interval : " + randomInterval); // Console the random interval between the range of 1000 to 1400
     // after the random interval is generated, hide the mole image
     setTimeout(function () {
@@ -136,7 +149,7 @@ function displayMole() {
     }, randomInterval); // randomInterval -> generated any random interval
   } else if (gameLevel == "Hard") {
     // if game level Hard, generate any random interval between the range of 400 milliseconds to 700 milliseconds
-    randomInterval = Math.floor(Math.random() * (700 - 400 + 1)) + 400;
+    randomInterval = Math.floor(Math.random() * (900 - 400 + 1)) + 400;
     // after the random generated interval, hide the mole image
     setTimeout(function () {
       $("#" + randomBox).html(""); // Hide the Mole image
@@ -234,8 +247,25 @@ $("#easyLevel").click(function () {
 
   $("#easyLevel").addClass("selectedBtn"); // Highlight Easy button
   $("#easyLevel").attr("disabled", "disabled"); // Disable the Easy button to click again
-  $("#hardLevel").addClass("notselectedBtn"); // Disable the click on Hard button
+  $("#mediumLevel").attr("disabled", "disabled"); // Disable the Medium button to click again
   $("#hardLevel").attr("disabled", "disabled"); // Disable the Hard button to click on it
+  $("#mediumLevel").addClass("notselectedBtn"); // Disable the click on Medium button
+  $("#hardLevel").addClass("notselectedBtn"); // Disable the click on Hard button
+
+  startGame(); // startGame function call (FUNCTION No. 1)
+});
+
+// ! Medium Level button click event
+$("#mediumLevel").click(function () {
+  // Set the game level Easy
+  gameLevel = "Medium";
+
+  $("#mediumLevel").addClass("selectedBtn"); // Highlight Medium button
+  $("#easyLevel").attr("disabled", "disabled"); // Disable the Easy button to click again
+  $("#mediumLevel").attr("disabled", "disabled"); // Disable the Medium button to click on it
+  $("#hardLevel").attr("disabled", "disabled"); // Disable the Hard button to click on it
+  $("#easyLevel").addClass("notselectedBtn"); // Disable the click on Easy button
+  $("#hardLevel").addClass("notselectedBtn"); // Disable the click on Hard button
 
   startGame(); // startGame function call (FUNCTION No. 1)
 });
