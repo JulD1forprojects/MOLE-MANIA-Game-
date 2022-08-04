@@ -61,6 +61,11 @@
               <span id="pname"></span><br />
               <span id="score">Score : <span id="currentScore">0</span></span
               ><br />
+              <span id="coin"
+                ><img src="purse.png" width="40" />:
+                <span id="currentCoin">0</span></span
+              >
+              <br />
               <span id="timer">Time : <span id="remainTime">30</span></span
               ><br />
             </div>
@@ -87,6 +92,10 @@
             <h2 class="gameover">GAME OVER</h2>
             <h2 id="pname1"></h2>
             <h2 id="finalscore">Score : <span id="currentScore1"></span></h2>
+            <h2 id="finalcoin">
+              <img src="purse.png" width="40" /> :
+              <span id="currentCoin1"></span>
+            </h2>
             <h2>Accuracy : <span id="accuracy"></span></h2>
             <button class="defaultBtn" id="playAgain">PLAY AGAIN</button>
           </div>
@@ -94,6 +103,10 @@
           <!--! CREATING KEYBOARD PLAYER INSTRUCTIONS FOR THE GAME -->
           <div class="instructions" id="instructions">
             <h2 class="howtoplay">INSTRUCTIONS</h2>
+            <h3>Catch Only Me!!!</h3>
+            <img src="mole.png" class="logo-instructions" />
+            <h3>Catch Me 5 Times To Earn 1 Mole Coin!</h3>
+
             <h4>Key Mapping</h4>
             <span class="instructionBox"></span>
             <span class="instructionBox"></span>
@@ -125,6 +138,7 @@
         </div>
       </div>
     </div>
+    <audio id="collectitem" src="collectitem.mp3"></audio>
     <script src="script.js"></script>
   </body>
 </html>

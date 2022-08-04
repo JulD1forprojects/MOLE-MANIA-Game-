@@ -28,7 +28,7 @@ body {
   display: inline-block;
 }
 .heading h1 {
-  color: #011f4b;
+  color: #1a0d01;
   margin: 0;
 }
 .logo {
@@ -109,8 +109,8 @@ body {
   font-weight: bold;
 }
 /* .playGameBtn:hover {
-  background: #333; */
-/* } */
+  background: #333;
+} */
 
 #error {
   color: #f00;
@@ -127,10 +127,23 @@ body {
 }
 #pname,
 #score,
+#coin,
 #timer {
   font-weight: bold;
   font-size: 24px;
 }
+/* ! coin */
+#coin img,
+#finalcoin img {
+  vertical-align: middle;
+}
+#currentScore,
+#currentCoin,
+#currentScore1,
+#accuracy {
+  vertical-align: middle;
+}
+
 /* ! pop up timer  */
 #popupTimer {
   display: none;
@@ -197,6 +210,15 @@ body {
 .instructions h2 {
   margin-bottom: 5px;
   text-decoration: underline;
+}
+.instructions h3 {
+  color: orangered;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.logo-instructions {
+  width: 150px;
+  margin: 10px 0;
 }
 .instructions p {
   margin: 5px 0;
