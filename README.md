@@ -28,10 +28,10 @@ For the set board keys mapping refer to the picture below.
 
 BEST OF LUCK!!!
 
-## Author
+## &#128992; Author
 
 Yuliya (Juliet) Derdyuk
 
-## Demployment
+## &#128992; Demployment
 
 [PLAY MOLE MANIA HERE](https://mole-mania-game-juld1forprojects.vercel.app/)
