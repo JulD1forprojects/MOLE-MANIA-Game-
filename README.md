@@ -22,11 +22,12 @@ For the set board keys mapping refer to the picture below.
 <li> Input your name </li>
 <li> Click Play! </li>
 <li> Use Mouse on-click / keyboard keys to register your clicks</li>
-<li> You will score based on how many times you manage to click on the CORRECT / WRONG MOLE SPRITES within the offered timeframe of 30sec. </li>
-<li>You will be rewarded with a coin each time you catch 5 Correct Moles.</li>
+<li> You will score based on how many times you manage to click on the CORRECT / WRONG MOLE SPRITES within the offered timeframe of 30sec </li>
+<li>You will be rewarded with a coin each time you catch 5 Correct Moles</li>
+<li>Click Play Again! button to restart the game</li>
 </ol>
 
-BEST OF LUCK!!!
+<p>**BEST OF LUCK!!!**</p>
 
 ## &#128992; Author
 
