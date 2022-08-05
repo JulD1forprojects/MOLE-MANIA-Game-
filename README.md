@@ -27,7 +27,7 @@ For the set board keys mapping refer to the picture below.
 <li>Click "Play Again!" button to restart the game</li>
 </ol>
 
-#### BEST OF LUCK!!!
+#### HAVE FUN!!!
 
 ## &#128992; Author
 
