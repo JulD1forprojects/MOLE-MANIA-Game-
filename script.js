@@ -132,7 +132,7 @@ function playGame() {
 //! FUNCTION No. 3 -> displayMole()
 function displayMole() {
   //! DISPLAY 1st MOLE IMAGE
-  // Generate one random box from the array of 9 boxes and remove from the array
+  // Generate one random box ID from the array of 9 boxes and remove from the array
   randomBox = allBoxes.splice(
     Math.floor(Math.random() * allBoxes.length),
     1
@@ -341,13 +341,13 @@ function checkMole(b) {
   ) {
     totalClicked++; // Increment the total clicks
     console.log("Total Clicks : " + totalClicked); // Console total clicks
-    correctClicked++; // Increment the correct clicks
+    correctClicked++; //! Increment the correct clicks
     console.log("Correct Clicks : " + correctClicked); // Console total clicks
     $("#currentScore").text(correctClicked); // Display the increased score at top heading
     //! Check if score is divisible by 5 -> generate a coin reward
     if (correctClicked % 5 == 0 && correctClicked > 0) {
       //! If coin is generated -> play the music
-      collectCoin++; // Increase the coin collection
+      collectCoin++; // Increment the coin collection
       $("#collectitem")[0].play(); // Play the item collect music
       $("#currentCoin").text(collectCoin); // Display the increased coin at top heading
     }
