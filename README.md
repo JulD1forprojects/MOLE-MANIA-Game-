@@ -33,6 +33,6 @@ To play this game with the keyboard keys, please refer to the Key Mapping instuc
 
 Yuliya (Juliet) Derdyuk
 
-## &#128992; Demployment
+## &#128992; Deployment
 
 [PLAY MOLE MANIA HERE](https://mole-mania-game-juld1forprojects.vercel.app/)
