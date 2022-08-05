@@ -7,7 +7,7 @@ Mole Mania is a modified version of “Whack a mole” game designed to test a p
 ## &#128992; **Instructions**
 
 Mole Mania can be palyed on mouse click, with keyboard keys, or using both.
-Player must try to catch the Correct Mole by clicking either on the mouse or the set of keyboard keys as frequently as the Correct Mole Sprite is being displayed in the boxes within the timeframe of 30sec. A Player will score incrementally according to how many times he/she manages to catch the Correct Mole Sprite. If the correct Mole Sprite gets caught 5 times, the player is rewarded with 1 coin (5 CORRECT MOLES CAUGHT => 1 COIN REWARD). If the player catches a Wrong Mole Sprite, his/her points together with earned coins will be decremented from the overall score (1 WRONG MOLE CAUGHT => - 1 POINT and - 1 COIN REWARD)
+Player must try to catch the Correct Mole by clicking either on the mouse or the set of keyboard keys as frequently as the Correct Mole Sprite is being displayed in the boxes within the timeframe of 30sec. A Player will score incrementally according to how many times he/she manages to catch the Correct Mole Sprite. If the correct Mole Sprite gets caught 5 times, the player is rewarded with 1 coin (CATCH CORRECT MOLE 5 TIMES => GET 1 COIN REWARD). If the player catches a Wrong Mole Sprite, his/her points together with earned coins will be decremented from the overall score (1 WRONG MOLE CAUGHT => - 1 POINT and - 1 COIN REWARD)
 
 For the set board keys mapping refer to the picture below.
 
