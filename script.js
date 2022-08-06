@@ -194,25 +194,25 @@ function displayMole() {
   } else if (gameLevel == "Medium") {
     // !if game level Medium, generate any random interval between the range of 800 milliseconds to 1100 milliseconds
     randomInterval = Math.floor(Math.random() * (1100 - 800 + 1)) + 800;
-    console.log("Random Interval : " + randomInterval); // Console the random interval between the range of 1000 to 1400
+    console.log("Random Interval : " + randomInterval); // Console the random interval between the range of 800 to 1100
     // after the random interval is generated, hide the mole image
     setTimeout(function () {
       $("#" + randomBox).html(""); // Hide the mole image
     }, randomInterval); // randomInterval -> generated any random interval
 
-    // if game level Easy, generate any random interval between the range of 1000 milliseconds to 1400 milliseconds
+    // if game level Medium, generate any random interval between the range of 800 milliseconds to 1100 milliseconds
     randomIntervalSecondMole =
       Math.floor(Math.random() * (1100 - 800 + 1)) + 800;
-    console.log("Random Interval Another Mole : " + randomIntervalSecondMole); // Console the another random interval between the range of 1000 to 1400
+    console.log("Random Interval Another Mole : " + randomIntervalSecondMole); // Console the another random interval between the range of 800 to 1100
     // after the another random interval is generated, hide the second mole image
     setTimeout(function () {
       $("#" + randomSecondBox).html(""); // Hide the second mole image
     }, randomIntervalSecondMole); // randomIntervalSecondMole -> generated any random interval
 
-    // if game level Easy, generate any random interval between the range of 1000 milliseconds to 1400 milliseconds
+    // if game level Medium, generate any random interval between the range of 800 milliseconds to 1100 milliseconds
     randomIntervalThirdMole =
       Math.floor(Math.random() * (1100 - 800 + 1)) + 800;
-    console.log("Random Interval Another Mole : " + randomIntervalThirdMole); // Console the another random interval between the range of 1000 to 1400
+    console.log("Random Interval Another Mole : " + randomIntervalThirdMole); // Console the another random interval between the range of 800 to 1100
     // after the another random interval is generated, hide the third mole image
     setTimeout(function () {
       $("#" + randomThirdBox).html(""); // Hide the third mole image
@@ -225,16 +225,16 @@ function displayMole() {
       $("#" + randomBox).html(""); // Hide the Mole image
     }, randomInterval); // -> generate random interval
 
-    // if game level Easy, generate any random interval between the range of 1000 milliseconds to 1400 milliseconds
+    // if game level Hard, generate any random interval between the range of 400 milliseconds to 700 milliseconds
     randomIntervalSecondMole =
       Math.floor(Math.random() * (700 - 400 + 1)) + 400;
-    console.log("Random Interval Second Mole : " + randomIntervalSecondMole); // Console the another random interval between the range of 1000 to 1400
+    console.log("Random Interval Second Mole : " + randomIntervalSecondMole); // Console the another random interval between the range of 400 to 700
     // after the another random interval is generated, hide the second mole image
     setTimeout(function () {
       $("#" + randomSecondBox).html(""); // Hide the second mole image
     }, randomIntervalSecondMole); // randomIntervalSecondMole -> generated any random interval
 
-    // if game level Easy, generate any random interval between the range of 1000 milliseconds to 1400 milliseconds
+    // if game level Hard, generate any random interval between the range of 400 milliseconds to 700 milliseconds
     randomIntervalThirdMole = Math.floor(Math.random() * (700 - 400 + 1)) + 400;
     console.log("Random Interval Third Mole : " + randomIntervalThirdMole); // Console the another random interval between the range of 1000 to 1400
     // after the another random interval is generated, hide the third mole image
