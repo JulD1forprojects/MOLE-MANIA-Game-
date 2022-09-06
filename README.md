@@ -20,11 +20,11 @@ To play this game with the keyboard keys, please refer to the Key Mapping instuc
 <ol> 
 <li> Select the Level you want to play – EASY / MEDIUM / HARD</li> 
 <li> Input your name </li>
-<li> Click ``Play!`` </li>
+<li> Click "Play!" </li>
 <li> Use Mouse on-click / keyboard keys to register your clicks</li>
 <li> You will score based on how many times you manage to click on the CORRECT / WRONG MOLE SPRITES within the offered timeframe of 30sec </li>
 <li>You will be rewarded with a coin each time you catch 5 Correct Moles or have your points and generated coins deducted if you catch the Wrong Moles</li>
-<li>Click ``Play Again!` button to restart the game</li>
+<li>Click Play Again!" button to restart the game</li>
 </ol>
 
 #### HAVE FUN!!!
